@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Component/Header";
+import Footer from "./Component/Footer";
+import Main from "./Component/Main/Main";
+import Service from "./Component/Service/Service";
+import Event from "./Component/Event/Event";
+import PreOrder from "./Component/PreOrder/PreOrder";
+import GlobalStyles from "./Styles/GlobalStyles";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+      <GlobalStyles />
+        <Header />
+        <Main />
+        <Service />
+        <Event />
+        <PreOrder />
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default App;
